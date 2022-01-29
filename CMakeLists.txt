@@ -8,15 +8,15 @@ add_definitions("-Wall -g")
 
 find_package(OpenCV REQUIRED)
 message("OpenCV version : ${OpenCV_VERSION}")
-#set(OpenCV_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/inlude/opencv2.4.9/opencv2)
-#set(OpenCV_LIB_DIR ${PROJECT_SOURCE_DIR}/library/opencv2.4.9/)
+#set(OpenCV_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/opencv/include/opencv ${PROJECT_SOURCE_DIR}/opencv/include/opencv2)
+#set(OpenCV_LIB_DIR ${PROJECT_SOURCE_DIR}/opencv/library)
 
-include_directories(${OpenCV_INCLUDE_DIRS})
-link_directories(${OpenCV_LIB_DIRS})
+#target_include_directories(${OpenCV_INCLUDE_DIRS})
+#link_directories(${OpenCV_LIB_DIR})
 
 #message("OpenCV lib dir : ${OpenCV_LIB_DIR}")
 #message("OpenCV include dir : ${OpenCV_INCLUDE_DIRS}")
 
-add_executable(unit_test ${PROJECT_SOURCE_DIR}/src/unit_test.cpp)
+add_executable(unit_test ${PROJECT_SOURCE_DIR}/unit_test/unit_test.cpp)
 
-target_link_libraries(unit_test ${OpenCV_LIBS})
+target_link_libraries(unit_test PRIVATE ${OpenCV_LIBS})

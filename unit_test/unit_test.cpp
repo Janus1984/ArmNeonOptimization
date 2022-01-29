@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 #include "boxFilter.h"
 #include "boxFilterBetter.h"
 #include <opencv2/opencv.hpp>
@@ -56,7 +56,7 @@ int main(){
 		Src_float[i] = (float)(Src[i]);
 	}
 
-	int64 st = cvGetTickCount();
+	int64 st = cv::getTickCount();
 	for(int i=0; i<10; i++){
 		//BoxFilterBetterOrigin(Src_float, Dest, Width, Height, Radius);
 		//BoxFilterBetterNeonIntrinsics(Src_float, Dest, Width, Height, Radius);
