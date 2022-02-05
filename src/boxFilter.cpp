@@ -10,6 +10,7 @@
 void BoxFilterOrigin(float *Src, float *Dest, int Width, int Height, int Radius){
     for(int Y = 0; Y < Height; Y++){
         for(int X = 0; X < Width; X++){
+            //确定4个边界，ST_X,ST_Y,EN_X,EN_Y
             int ST_Y = Y - Radius;
             if(ST_Y < 0) ST_Y = 0;
             int EN_Y = Y + Radius;
@@ -18,6 +19,7 @@ void BoxFilterOrigin(float *Src, float *Dest, int Width, int Height, int Radius)
             if(ST_X < 0) ST_X = 0;
             int EN_X = X + Radius;
             if(EN_X > Width-1) EN_X = Width-1;
+            //滤波器内循环
             float sum = 0;
             for(int ty = ST_Y; ty <= EN_Y; ty++){
                 for(int tx = ST_X; tx <= EN_X; tx++){

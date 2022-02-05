@@ -2,8 +2,8 @@
 #include "boxFilter.h"
 //#include "boxFilterBetter.h"
 #include <opencv2/opencv.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
+//#include <opencv2/core.hpp>
+//#include <opencv2/highgui.hpp>
 using namespace std;
 using namespace cv;
 
@@ -14,6 +14,7 @@ int main(){
 	int Height = src.rows;
 	int Width = src.cols;
 	int Radius = 3;
+	//展开为向量
 	unsigned char *Src = src.data;
 	float *Src_float = new float[Height * Width];
 	float *Dest = new float[Height * Width];
@@ -26,7 +27,7 @@ int main(){
 	cache.resize(Height * Width);
 
 	int64 st = cv::getTickCount();
-	for(int i=0; i<10; i++){
+	for(int i=0; i<1000; i++){
 		BoxFilterOrigin(Src_float, Dest, Width, Height, Radius);
 		//BoxFilterOpenCV(Src_float, Dest, Width, Height, Radius, cache);
 		//BoxFilterOpenCV2(Src_float, Dest, Width, Height, Radius, cache);

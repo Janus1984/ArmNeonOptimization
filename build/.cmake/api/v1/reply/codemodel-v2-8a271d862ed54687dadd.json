@@ -11,7 +11,7 @@
 						1,
 						2
 					],
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -21,7 +21,7 @@
 				},
 				{
 					"build" : "src",
-					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -36,7 +36,7 @@
 				},
 				{
 					"build" : "unit_test",
-					"jsonFile" : "directory-unit_test-8ecffe0d96a6093a1aff.json",
+					"jsonFile" : "directory-unit_test-Debug-8ecffe0d96a6093a1aff.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -50,7 +50,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -95,14 +95,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "src::@145eef247bfb46b6828c",
-					"jsonFile" : "target-src-6c59efa9491a4f04d9c5.json",
+					"jsonFile" : "target-src-Debug-6e1608a799f661cb352a.json",
 					"name" : "src",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "unit_test::@48698c54c02ad68120a8",
-					"jsonFile" : "target-unit_test-3b7d581d3e6d779b349d.json",
+					"jsonFile" : "target-unit_test-Debug-4d6bfe30b055d46c7d86.json",
 					"name" : "unit_test",
 					"projectIndex" : 2
 				}

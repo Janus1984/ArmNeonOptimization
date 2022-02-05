@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/janus/ArmNeonOptimization/src/../include
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 
